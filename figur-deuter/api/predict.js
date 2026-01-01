@@ -21,11 +21,11 @@ export default async function handler(req, res) {
                 messages: [
                     {
                         role: "system",
-                        content: "Du bist ein mystisches Orakel für Wachsgießen. Deute die Figur des Nutzers kreativ, kurz und humorvoll. Gib auch eine kurze Zukunftsprognose (Liebe, Glück oder Geld)."
+                        content: "Du bist ein mystisches Orakel für Wachsgießen. Deute die Figur des Nutzers kreativ, kurz und humorvoll. Gib auch eine kurze Zukunftsprognose (Liebe, Glück oder Geld). Fasse dich kurz."
                     },
                     { role: "user", content: `Ich habe folgende Form gegossen: ${shape}` }
                 ],
-                max_tokens: 150
+                max_tokens: 500
             })
         });
 
