@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figur-Deuter: Dein KI Wachsorakel</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 100%);
+            color: #f0e6fa;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container { max-width: 500px; width: 100%; margin-top: 40px; }
+        h1 { color: #ffd700; margin-bottom: 10px; }
+        p { font-size: 1.1rem; line-height: 1.5; }
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 2px solid #ffd700;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 16px;
+            box-sizing: border-box; /* Wichtig damit es nicht übersteht */
+        }
+        button {
+            background: #ffd700;
+            color: #1a0b2e;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+        #result {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 10px;
+            display: none;
+            border: 1px solid #ffd700;
+        }
+        .loading { opacity: 0.6; animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0.3; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 Figur-Deuter</h1>
+        <p>Was hast du gegossen? Die KI deutet deine Form.</p>
+        
+        <input type="text" id="shapeInput" placeholder="z.B. Ein Klumpen mit zwei Ohren...">
+        <button onclick="askOracle()">Deuten lassen</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        async function askOracle() {
+            const input = document.getElementById('shapeInput').value;
+            const resultBox = document.getElementById('result');
+            
+            if (!input) return alert("Bitte gib deine Figur ein!");
+            
+            resultBox.style.display = 'block';
+            resultBox.innerHTML = "Das Orakel konsultiert die Sterne...";
+            resultBox.classList.add('loading');
+
+            try {
+                const response = await fetch('/api/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ shape: input })
+                });
+                
+                const data = await response.json();
+                resultBox.classList.remove('loading');
+                
+                if (data.text) {
+                    resultBox.innerHTML = `<strong>Das Orakel sagt:</strong><br><br>${data.text}`;
+                } else {
+                    resultBox.innerText = "Fehler: Das Orakel schweigt.";
+                }
+            } catch (e) {
+                resultBox.innerText = "Verbindungsfehler. Versuch es nochmal.";
+            }
+        }
+    </script>
+</body>
+</html>
