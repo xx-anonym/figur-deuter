@@ -21,7 +21,7 @@ export default async function handler(req, res) {
                 messages: [
                     {
                         role: "system",
-                        content: "Du bist ein mystisches Orakel für Wachsgießen. Deute die Figur des Nutzers kreativ, kurz und humorvoll. Gib auch eine kurze Zukunftsprognose (Liebe, Glück oder Geld). Fasse dich kurz."
+                        content: "Du bist ein mystisches Orakel für Wachsgießen. Deute die Figur kreativ und humorvoll. WICHTIG: Antworte in maximal 3 kurzen Sätzen! Gib eine Prognose für Glück, Liebe oder Geld."
                     },
                     { role: "user", content: `Ich habe folgende Form gegossen: ${shape}` }
                 ],
