@@ -252,6 +252,36 @@
             background: var(--accent-gold);
             color: var(--bg-dark);
         }
+        /* --- NEUE MAGISCHE EFFEKTE --- */
+    #magic-background {
+        position: fixed; /* Bleibt beim Scrollen stehen */
+        top: 0; left: 0; width: 100%; height: 100%;
+        pointer-events: none; /* Klicks gehen durch */
+        z-index: -1; /* Ganz hinten */
+        overflow: hidden;
+    }
+
+    .magic-particle {
+        position: absolute;
+        color: var(--accent-gold);
+        will-change: transform, opacity;
+        /* Die Animation wird vom Javascript gesetzt */
+    }
+
+    /* Die Animation: Sanftes Schweben und Drehen */
+    @keyframes magicFloat {
+        0% {
+            opacity: 0;
+            transform: translate(0, 0) scale(0.5) rotate(0deg);
+        }
+        20% { opacity: 0.6; } /* Einblenden */
+        80% { opacity: 0.4; } /* Oben bleiben */
+        100% {
+            opacity: 0; /* Ausblenden */
+            /* Bewegt sich zu den vom JS zufällig bestimmten Koordinaten */
+            transform: translate(var(--move-x), var(--move-y)) scale(1.2) rotate(180deg);
+        }
+    }
 
     </style>
 </head>
@@ -308,9 +338,7 @@
         <div class="ad-slot">Werbung Platzhalter (Bottom)</div>
     </main>
    <main>
-        <span class="decoration-star" style="top: 10%; left: 5%; font-size: 20px;">✦</span>
-        <span class="decoration-star" style="top: 25%; right: 8%; font-size: 15px;">★</span>
-        <span class="decoration-star" style="bottom: 15%; left: 10%; font-size: 18px;">✦</span>
+        <div id="magic-background"></div>
 
         <div class="card">
             <span class="seo-badge">Die Silvester-Tradition 2026</span>
@@ -394,5 +422,44 @@
             }
         }
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('magic-background');
+        const symbols = ['★', '✦', '✧', '✷', '•', '✨']; // Verschiedene Symbole
+        const particleCount = 35; // Anzahl der Elemente
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('magic-particle');
+            // Zufälliges Symbol auswählen
+            particle.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+
+            // Zufällige Startposition
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.top = `${Math.random() * 100}vh`;
+
+            // Zufällige Größe (zwischen 10px und 25px)
+            const size = Math.random() * 15 + 10;
+            particle.style.fontSize = `${size}px`;
+
+            // Zufällige Bewegungsrichtung definieren (CSS Variablen)
+            // Bewegt sich irgendwohin zwischen -150px und +150px
+            const moveX = (Math.random() - 0.5) * 300 + 'px';
+            const moveY = (Math.random() - 0.5) * 300 - 50 + 'px'; // Tendenz leicht nach oben
+            particle.style.setProperty('--move-x', moveX);
+            particle.style.setProperty('--move-y', moveY);
+
+            // Zufällige Animationsdauer (zwischen 10s und 25s für langsame Bewegung)
+            const duration = Math.random() * 15 + 10 + 's';
+            // Zufällige Verzögerung, damit nicht alle gleichzeitig starten
+            const delay = Math.random() * 10 + 's';
+
+            particle.style.animation = `magicFloat ${duration} ${delay} infinite linear`;
+
+            container.appendChild(particle);
+        }
+    });
+</script>
 </body>
 </html>
