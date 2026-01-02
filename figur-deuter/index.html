@@ -445,10 +445,23 @@
                 resultBox.classList.remove('loading');
                 
                 if (data.text) {
-                    // Schönere Formatierung des Ergebnisses
+                    // 1. Ergebnis anzeigen
                     resultBox.innerHTML = `
                         <strong style="color: var(--accent-gold); font-size: 1.2rem; display:block; margin-bottom:10px;">Deine persönliche Prophezeiung:</strong>
                         ${data.text}
+                    `;
+
+                    // --- NEU: WhatsApp Share Logik ---
+                    const shareArea = document.getElementById('share-area');
+                    const whatsappLink = document.getElementById('whatsapp-link');
+
+                    // Text für WhatsApp zusammenbauen
+                    const shareMessage = `🔮 Mein Wachsorakel 2026: "${data.text}" \n\nDeute deine Figur jetzt auch auf: https://figur-deuter.de`;
+
+                    // Link generieren und Button sichtbar machen
+                    whatsappLink.href = `https://wa.me/?text=${encodeURIComponent(shareMessage)}`;
+                    shareArea.style.display = 'block';
+
                     `;
                 } else {
                     resultBox.innerText = "Der Nebel ist zu dicht. Versuche es erneut.";
