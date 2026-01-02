@@ -17,6 +17,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
+        /* Dekorative Elemente */
+        .decoration-star {
+            position: absolute;
+            color: var(--accent-gold);
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: -1;
+            animation: twinkle 4s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.2); }
+        }
+
+        /* SEO Banner Design */
+        .seo-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
         :root {
             --bg-dark: #0f172a;
             --accent-gold: #fbbf24;
@@ -279,7 +307,26 @@
 
         <div class="ad-slot">Werbung Platzhalter (Bottom)</div>
     </main>
-    <section class="seo-content" style="border-top: 1px solid var(--glass-border); margin-top: 40px;">
+   <main>
+        <span class="decoration-star" style="top: 10%; left: 5%; font-size: 20px;">✦</span>
+        <span class="decoration-star" style="top: 25%; right: 8%; font-size: 15px;">★</span>
+        <span class="decoration-star" style="bottom: 15%; left: 10%; font-size: 18px;">✦</span>
+
+        <div class="card">
+            <span class="seo-badge">Die Silvester-Tradition 2026</span>
+            <h1>Digitales Wachsgießen & Zinngießen</h1>
+            
+            <p class="seo-content" style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">
+                Das <strong>Wachsgießen</strong> (und früher das Zinngießen) gehört zum Silvesterabend wie das Feuerwerk. 
+                Es ist der magische Moment, in dem wir einen Blick in die Zukunft werfen. Unser KI-gestütztes Orakel 
+                hilft dir dabei, die oft rätselhaften Formen deiner gegossenen Figuren präzise und modern zu deuten. 
+                Egal ob du eine klassische Form oder ein abstraktes Gebilde hast – finde heraus, was das neue Jahr für dich bereithält.
+            </p>
+
+            ```
+
+---
+
             <h2>Zubehör für dein Silvester-Event</h2>
             <p>Du hast kein Wachs mehr oder brauchst Nachschub für die nächste Party? Hier sind unsere Empfehlungen für ein sicheres und spaßiges Gießen:</p>
             
