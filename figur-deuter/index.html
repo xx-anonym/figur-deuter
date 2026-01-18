@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
 
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org Structured Data - WebApplication -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -55,6 +55,87 @@
             "name": "Figur-Deuter.de"
         },
         "inLanguage": "de-DE"
+    }
+    </script>
+
+    <!-- Schema.org FAQPage - For Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Wachsgießen und Bleigießen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bleigießen war der traditionelle Silvesterbrauch, bei dem Blei geschmolzen und in kaltes Wasser gegossen wurde. Seit 2018 ist der Verkauf von Bleigießen-Sets in der EU verboten, da Blei gesundheitsschädlich ist. Wachsgießen und Zinngießen sind die unbedenklichen Alternativen, die genauso faszinierende Ergebnisse liefern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie genau sind die Deutungen dieses Online-Orakels?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Unser Orakel basiert auf jahrhundertealter Symbolik und moderner Analyse. Es kombiniert traditionelle Bedeutungen mit einer individuellen Interpretation deiner spezifischen Beschreibung. Die Deutungen dienen der Unterhaltung und können dir neue Perspektiven für das kommende Jahr eröffnen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich das Orakel auch für Zinngießen verwenden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, absolut! Egal ob deine Figur aus Wachs, Zinn oder einem anderen Material entstanden ist – beschreibe einfach, was du siehst. Unser Deutungssystem funktioniert unabhängig vom verwendeten Material."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist dieses Online-Orakel wirklich kostenlos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Figur-Deuter ist zu 100% kostenlos nutzbar. Du kannst so viele Figuren deuten lassen, wie du möchtest – ohne Registrierung, ohne versteckte Kosten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie beschreibe ich meine Wachsfigur am besten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Je detaillierter, desto besser! Beschreibe nicht nur, was du siehst, sondern auch Details und Gefühle. Details wie 'eine Schlange, die sich um einen Baum windet' liefern reichhaltigere Deutungen als nur 'Schlange'."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org HowTo - For How-To Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Wachsgießen Figuren online deuten lassen",
+        "description": "So nutzt du das kostenlose Online-Orakel um deine Wachsgießen oder Bleigießen Figur deuten zu lassen.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Figur beschreiben",
+                "text": "Beschreibe deine Wachsfigur so detailliert wie möglich. Was siehst du? Ein Tier, ein Gegenstand, eine abstrakte Form?",
+                "position": 1
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Orakel befragen",
+                "text": "Klicke auf 'Jetzt Figur deuten' und unser System analysiert deine Beschreibung basierend auf jahrhundertealter Symbolik.",
+                "position": 2
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Persönliche Deutung erhalten",
+                "text": "Erhalte deine individuelle Prophezeiung für das kommende Jahr – einzigartig wie deine Figur.",
+                "position": 3
+            }
+        ],
+        "totalTime": "PT1M"
     }
     </script>
 
@@ -480,9 +561,10 @@
     <div id="magic-background"></div>
 
     <header>
-        <h1>✨ Figur-Deuter</h1>
-        <p class="subtitle">Das moderne Orakel für Wachsgießen & Bleigießen.<br>Vergiss alte Handbücher und
-            unvollständige Internetlisten – hier wird deine Form individuell gedeutet.</p>
+        <h1>✨ Wachsgießen & Bleigießen Figuren deuten – Dein Online-Orakel</h1>
+        <p class="subtitle">Das <strong>kostenlose Silvester-Orakel 2026</strong> für deine Wachsfiguren.<br>Vergiss
+            alte Handbücher und
+            unvollständige Internetlisten – hier wird deine Form <em>individuell</em> gedeutet.</p>
     </header>
 
     <main>
@@ -509,7 +591,8 @@
         </div>
 
         <!-- How It Works Section -->
-        <div class="seo-content" style="border-top: 1px solid var(--glass-border); margin-top: 40px;">
+        <section id="anleitung" class="seo-content"
+            style="border-top: 1px solid var(--glass-border); margin-top: 40px;">
             <h2>So funktioniert's – In 3 einfachen Schritten</h2>
             <p>Unser modernes Orakel macht die Deutung deiner Wachsfigur kinderleicht. Im Gegensatz zu traditionellen
                 Deutungslisten analysieren wir deine individuelle Beschreibung und liefern eine maßgeschneiderte
@@ -535,10 +618,10 @@
                         deine Figur.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- FAQ Section -->
-        <div class="seo-content">
+        <section id="faq" class="seo-content">
             <h2>Häufig gestellte Fragen zum Wachsgießen</h2>
             <p>Hier findest du Antworten auf die wichtigsten Fragen rund um das Thema Wachsgießen, Bleigießen und
                 Orakel-Deutung.</p>
@@ -547,10 +630,13 @@
                 <div class="faq-item">
                     <div class="faq-question">Was ist der Unterschied zwischen Wachsgießen und Bleigießen?</div>
                     <div class="faq-answer">
-                        Bleigießen war der traditionelle Silvesterbrauch, bei dem Blei geschmolzen und in kaltes Wasser
+                        Bleigießen war der traditionelle Silvesterbrauch, bei dem Blei geschmolzen und in kaltes
+                        Wasser
                         gegossen wurde. Seit 2018 ist der Verkauf von Bleigießen-Sets in der EU verboten, da Blei
-                        gesundheitsschädlich ist. Wachsgießen und Zinngießen sind die unbedenklichen Alternativen, die
-                        genauso faszinierende Ergebnisse liefern. Die entstehenden Formen sind oft sogar noch filigraner
+                        gesundheitsschädlich ist. Wachsgießen und Zinngießen sind die unbedenklichen Alternativen,
+                        die
+                        genauso faszinierende Ergebnisse liefern. Die entstehenden Formen sind oft sogar noch
+                        filigraner
                         und interessanter.
                     </div>
                 </div>
@@ -569,8 +655,10 @@
                 <div class="faq-item">
                     <div class="faq-question">Kann ich das Orakel auch für Zinngießen verwenden?</div>
                     <div class="faq-answer">
-                        Ja, absolut! Egal ob deine Figur aus Wachs, Zinn oder einem anderen Material entstanden ist –
-                        beschreibe einfach, was du siehst. Unser Deutungssystem funktioniert unabhängig vom verwendeten
+                        Ja, absolut! Egal ob deine Figur aus Wachs, Zinn oder einem anderen Material entstanden ist
+                        –
+                        beschreibe einfach, was du siehst. Unser Deutungssystem funktioniert unabhängig vom
+                        verwendeten
                         Material, da es sich auf die Form und ihre symbolische Bedeutung konzentriert.
                     </div>
                 </div>
@@ -578,8 +666,10 @@
                 <div class="faq-item">
                     <div class="faq-question">Ist dieses Online-Orakel wirklich kostenlos?</div>
                     <div class="faq-answer">
-                        Ja, Figur-Deuter ist zu 100% kostenlos nutzbar. Du kannst so viele Figuren deuten lassen, wie du
-                        möchtest – ohne Registrierung, ohne versteckte Kosten. Wir finanzieren uns durch dezente Werbung
+                        Ja, Figur-Deuter ist zu 100% kostenlos nutzbar. Du kannst so viele Figuren deuten lassen,
+                        wie du
+                        möchtest – ohne Registrierung, ohne versteckte Kosten. Wir finanzieren uns durch dezente
+                        Werbung
                         und Affiliate-Partnerschaften mit Shops, die Wachsgießen-Sets anbieten.
                     </div>
                 </div>
@@ -588,13 +678,15 @@
                     <div class="faq-question">Wie beschreibe ich meine Figur am besten?</div>
                     <div class="faq-answer">
                         Je detaillierter, desto besser! Beschreibe nicht nur, was du siehst (z.B. "eine Schlange"),
-                        sondern auch Details und Gefühle: Ist sie zusammengerollt oder gestreckt? Wirkt sie bedrohlich
-                        oder freundlich? Hat sie besondere Merkmale? Details wie "eine Schlange, die sich um einen Baum
+                        sondern auch Details und Gefühle: Ist sie zusammengerollt oder gestreckt? Wirkt sie
+                        bedrohlich
+                        oder freundlich? Hat sie besondere Merkmale? Details wie "eine Schlange, die sich um einen
+                        Baum
                         windet" liefern reichhaltigere Deutungen als nur "Schlange".
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- About Section -->
         <div class="seo-content">
@@ -602,14 +694,16 @@
             <div class="about-box">
                 <h3>🔮 Dein digitaler Begleiter für Silvester-Orakel</h3>
                 <p>Figur-Deuter wurde geschaffen, um die wunderbare Tradition des Wachsgießens und Bleigießens ins
-                    digitale Zeitalter zu bringen. Wir glauben, dass jede Figur einzigartig ist – und deshalb verdient
+                    digitale Zeitalter zu bringen. Wir glauben, dass jede Figur einzigartig ist – und deshalb
+                    verdient
                     sie eine ebenso einzigartige Deutung. Statt in starren Listen zu suchen, bieten wir dir ein
-                    intelligentes System, das deine individuelle Beschreibung versteht und interpretiert. So wird die
+                    intelligentes System, das deine individuelle Beschreibung versteht und interpretiert. So wird
+                    die
                     Silvester-Tradition zum persönlichen Erlebnis.</p>
             </div>
         </div>
 
-        <div class="seo-content" style="border-top: 1px solid var(--glass-border); margin-top: 40px;">
+        <section id="lexikon" class="seo-content" style="border-top: 1px solid var(--glass-border); margin-top: 40px;">
             <h2>Lexikon der Wachsfiguren: Bedeutungen & Symbole</h2>
             <p>In der langen Tradition des Wachsgießens haben sich bestimmte Symbole als besonders aussagekräftig
                 erwiesen. Hier findest du eine Auswahl der wichtigsten Deutungen für dein Orakel:</p>
@@ -622,12 +716,14 @@
                     schlagen.<br>
                     <strong style="color: var(--accent-gold);">Blume:</strong> Eine neue Freundschaft oder Liebe
                     erblüht.<br>
-                    <strong style="color: var(--accent-gold);">Drache:</strong> Sei mutig, ein großer Sieg wartet auf
+                    <strong style="color: var(--accent-gold);">Drache:</strong> Sei mutig, ein großer Sieg wartet
+                    auf
                     dich.<br>
                     <strong style="color: var(--accent-gold);">Engel:</strong> Du stehst unter besonderem Schutz.
                 </div>
                 <div>
-                    <strong style="color: var(--accent-gold);">Fisch:</strong> Ein unerwarteter Geldsegen kündigt sich
+                    <strong style="color: var(--accent-gold);">Fisch:</strong> Ein unerwarteter Geldsegen kündigt
+                    sich
                     an.<br>
                     <strong style="color: var(--accent-gold);">Glocke:</strong> Frohe Neuigkeiten erreichen dich
                     bald.<br>
@@ -641,22 +737,26 @@
             </div>
             <p style="margin-top: 20px; font-style: italic;">Hinweis: Dein individuelles Ergebnis im Orakel oben
                 kombiniert diese Traditionen mit einer modernen Analyse deiner spezifischen Form.</p>
-        </div>
+        </section>
 
-        <div class="seo-content">
+        <section id="tradition" class="seo-content">
             <span class="seo-badge">Die Silvester-Tradition 2026</span>
-            <h1>Wachsgießen & Zinngießen</h1>
-            <p>Das <strong>Wachsgießen oder Zinngießen</strong> (und früher das Bleigießen) gehört zum Silvesterabend
+            <h2>Wachsgießen & Zinngießen</h2>
+            <p>Das <strong>Wachsgießen oder Zinngießen</strong> (und früher das Bleigießen) gehört zum
+                Silvesterabend
                 wie das Feuerwerk. Es ist der magische Moment, in dem wir einen Blick in die Zukunft werfen.</p>
 
             <h2>Warum Wachsgießen statt Bleigießen?</h2>
-            <p>Seit dem EU-Verbot von Blei ist Wachsgießen die beliebte Alternative für das Silvester-Orakel. Doch oft
-                entstehen dabei abstrakte Formen, die in keiner klassischen Liste zu finden sind. Genau hier hilft unser
+            <p>Seit dem EU-Verbot von Blei ist Wachsgießen die beliebte Alternative für das Silvester-Orakel.
+                Doch oft
+                entstehen dabei abstrakte Formen, die in keiner klassischen Liste zu finden sind. Genau hier
+                hilft unser
                 <strong>modernes Deutungs-System</strong>.
             </p>
 
             <h2>Zubehör für dein Silvester-Event</h2>
-            <p>Du hast kein Wachs mehr oder brauchst Nachschub für die nächste Party? Hier sind unsere Empfehlungen:</p>
+            <p>Du hast kein Wachs mehr oder brauchst Nachschub für die nächste Party? Hier sind unsere
+                Empfehlungen:</p>
 
             <div class="shopping-grid">
                 <div class="product-card">
@@ -675,46 +775,62 @@
                     <a href="https://amzn.to/49mZx3D" target="_blank" class="buy-button">Auf Amazon ansehen</a>
                 </div>
             </div>
-        </div>
+            </div>
 
-        <div class="seo-content">
-            <h2>Die Geschichte des Bleigießens: Vom Altertum bis heute</h2>
-            <p>Das <strong>Bleigießen</strong> ist eines der ältesten Orakel-Bräuche der Menschheitsgeschichte und hat
-                seinen Ursprung bereits in der Antike. Schon die alten Griechen und Römer nutzten die
-                <strong>Molybdomantie</strong> – so der Fachbegriff für das Bleiorakel – um Einblicke in die Zukunft zu
-                gewinnen. Der Glaube dahinter war simpel und faszinierend zugleich: Die zufälligen Formen, die das
-                flüssige Metall beim Erstarren bildete, wurden als Botschaften höherer Mächte interpretiert.
-            </p>
+            <div class="seo-content">
+                <h2>Die Geschichte des Bleigießens: Vom Altertum bis heute</h2>
+                <p>Das <strong>Bleigießen</strong> ist eines der ältesten Orakel-Bräuche der Menschheitsgeschichte
+                    und hat
+                    seinen Ursprung bereits in der Antike. Schon die alten Griechen und Römer nutzten die
+                    <strong>Molybdomantie</strong> – so der Fachbegriff für das Bleiorakel – um Einblicke in die
+                    Zukunft zu
+                    gewinnen. Der Glaube dahinter war simpel und faszinierend zugleich: Die zufälligen Formen, die
+                    das
+                    flüssige Metall beim Erstarren bildete, wurden als Botschaften höherer Mächte interpretiert.
+                </p>
 
-            <p>In Mitteleuropa etablierte sich das <strong>Brauchtum</strong> des Bleigießens besonders stark im 18. und
-                19. Jahrhundert. Es wurde zu einem festen Bestandteil der
-                <strong>Silvesterabend</strong>-Feierlichkeiten, bei denen Familien zusammenkamen, um gemeinsam in das
-                neue Jahr zu blicken. Der Moment, wenn das geschmolzene Blei zischend ins kalte Wasser taucht und
-                erstarrt, war und ist ein magischer Augenblick voller Spannung und Vorfreude auf den
-                <strong>Zukunftsausblick</strong>.
-            </p>
+                <p>In Mitteleuropa etablierte sich das <strong>Brauchtum</strong> des Bleigießens besonders stark im
+                    18. und
+                    19. Jahrhundert. Es wurde zu einem festen Bestandteil der
+                    <strong>Silvesterabend</strong>-Feierlichkeiten, bei denen Familien zusammenkamen, um gemeinsam
+                    in das
+                    neue Jahr zu blicken. Der Moment, wenn das geschmolzene Blei zischend ins kalte Wasser taucht
+                    und
+                    erstarrt, war und ist ein magischer Augenblick voller Spannung und Vorfreude auf den
+                    <strong>Zukunftsausblick</strong>.
+                </p>
 
-            <p>Die Tradition folgte dabei stets einem ähnlichen Ablauf: Kleine Bleistücke wurden über einer Kerzenflamme
-                in einem speziellen Löffel erhitzt, bis sie flüssig wurden. Anschließend goss man das glühende Metall in
-                eine Schale mit kaltem Wasser. Die entstehende Form wurde dann gedeutet – entweder direkt oder anhand
-                ihres <strong>Schattenwurfs</strong> an der Wand. Diese Schattendeutung galt als besonders
-                aussagekräftig, da sie die Form noch deutlicher hervortreten ließ.</p>
+                <p>Die Tradition folgte dabei stets einem ähnlichen Ablauf: Kleine Bleistücke wurden über einer
+                    Kerzenflamme
+                    in einem speziellen Löffel erhitzt, bis sie flüssig wurden. Anschließend goss man das glühende
+                    Metall in
+                    eine Schale mit kaltem Wasser. Die entstehende Form wurde dann gedeutet – entweder direkt oder
+                    anhand
+                    ihres <strong>Schattenwurfs</strong> an der Wand. Diese Schattendeutung galt als besonders
+                    aussagekräftig, da sie die Form noch deutlicher hervortreten ließ.</p>
 
-            <p>Im Jahr 2018 kam jedoch ein wichtiger Wendepunkt: Die Europäische Union verbot den Verkauf von
-                Bleigießen-Sets, da das Schwermetall gesundheitsschädlich ist. Doch der Brauch lebte weiter!
-                <strong>Wachsgießen und Zinngießen</strong> wurden zu den beliebten Alternativen, die dieselbe
-                Faszination bieten, aber völlig unbedenklich sind. Die Formen, die beim Wachsgießen entstehen, sind oft
-                noch filigraner und abstrakter als beim klassischen Bleigießen – was die Deutung umso spannender macht.
-            </p>
+                <p>Im Jahr 2018 kam jedoch ein wichtiger Wendepunkt: Die Europäische Union verbot den Verkauf von
+                    Bleigießen-Sets, da das Schwermetall gesundheitsschädlich ist. Doch der Brauch lebte weiter!
+                    <strong>Wachsgießen und Zinngießen</strong> wurden zu den beliebten Alternativen, die dieselbe
+                    Faszination bieten, aber völlig unbedenklich sind. Die Formen, die beim Wachsgießen entstehen,
+                    sind oft
+                    noch filigraner und abstrakter als beim klassischen Bleigießen – was die Deutung umso spannender
+                    macht.
+                </p>
 
-            <p>Heute verbindet das <strong>Wachsgießen</strong> die Weisheit alter Traditionen mit modernen
-                Möglichkeiten. Statt in verstaubten Büchern nach Bedeutungen zu suchen oder sich mit unvollständigen
-                Listen im Internet zufriedenzugeben, bietet unser <strong>Online-Orakel</strong> eine zeitgemäße
-                Interpretation. Beschreibe einfach deine einzigartige Form und erhalte eine persönliche Deutung, die
-                genau auf dich zugeschnitten ist. So wird aus einem jahrhundertealten Brauch ein modernes Erlebnis für
-                den <strong>Silvesterabend</strong> – und dein ganz persönlicher <strong>Zukunftsausblick</strong> für
-                das kommende Jahr.</p>
-        </div>
+                <p>Heute verbindet das <strong>Wachsgießen</strong> die Weisheit alter Traditionen mit modernen
+                    Möglichkeiten. Statt in verstaubten Büchern nach Bedeutungen zu suchen oder sich mit
+                    unvollständigen
+                    Listen im Internet zufriedenzugeben, bietet unser <strong>Online-Orakel</strong> eine zeitgemäße
+                    Interpretation. Beschreibe einfach deine einzigartige Form und erhalte eine persönliche Deutung,
+                    die
+                    genau auf dich zugeschnitten ist. So wird aus einem jahrhundertealten Brauch ein modernes
+                    Erlebnis für
+                    den <strong>Silvesterabend</strong> – und dein ganz persönlicher
+                    <strong>Zukunftsausblick</strong> für
+                    das kommende Jahr.
+                </p>
+            </div>
     </main>
 
     <footer>
