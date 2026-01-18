@@ -5,8 +5,6 @@
     <meta name="google-site-verification" content="CxOYIsrHXX8Yx3yleZ8zkKCDQptbCpkeOqoNmjZsNYg" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1515275198056549"
         crossorigin="anonymous"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1515275198056549"
-        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,10 +14,18 @@
     <meta name="keywords"
         content="Wachsgießen Bedeutung, Bleigießen Figuren, Orakel online, Silvester Deutung, Wachs Figur erkennen, Traumdeutung, Zukunftsvorhersage">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Wachsgießen Figuren deuten - Das Online Orakel">
+    <meta name="author" content="Figur-Deuter.de">
+    <link rel="canonical" href="https://figur-deuter.de/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Wachsgießen Figuren deuten - Das Online Orakel 2026">
     <meta property="og:description"
         content="Lade deine Figur hoch oder beschreibe sie. Erhalte deine persönliche Deutung fürs kommende Jahr.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://figur-deuter.de/">
+    <meta property="og:site_name" content="Figur-Deuter">
+    <meta property="og:locale" content="de_DE">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -28,6 +34,29 @@
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
     <link rel="apple-touch-icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Figur-Deuter - Wachsgießen Orakel",
+        "url": "https://figur-deuter.de",
+        "description": "Kostenloses Online-Orakel zur Deutung von Wachsgießen und Bleigießen Figuren. Erhalte deine persönliche Prophezeiung für das neue Jahr.",
+        "applicationCategory": "Entertainment",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Figur-Deuter.de"
+        },
+        "inLanguage": "de-DE"
+    }
+    </script>
 
     <style>
         :root {
@@ -317,7 +346,118 @@
             color: var(--bg-dark);
         }
 
+        /* How It Works Section */
+        .how-it-works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
 
+        .step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #1e1b4b;
+        }
+
+        .step h3 {
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .step p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #e2e8f0;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s;
+            padding: 0 20px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 20px 20px;
+        }
+
+        /* About Section */
+        .about-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .about-box h3 {
+            color: var(--accent-gold);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
 
         footer {
             margin-top: auto;
@@ -365,6 +505,107 @@
                             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.067 2.875 1.215 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.938 3.659 1.434 5.627 1.435h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                     </svg>
                 </a>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="seo-content" style="border-top: 1px solid var(--glass-border); margin-top: 40px;">
+            <h2>So funktioniert's – In 3 einfachen Schritten</h2>
+            <p>Unser modernes Orakel macht die Deutung deiner Wachsfigur kinderleicht. Im Gegensatz zu traditionellen
+                Deutungslisten analysieren wir deine individuelle Beschreibung und liefern eine maßgeschneiderte
+                Interpretation.</p>
+
+            <div class="how-it-works">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Figur beschreiben</h3>
+                    <p>Beschreibe deine Wachsfigur so detailliert wie möglich. Was siehst du? Ein Tier, ein Gegenstand,
+                        eine Form?</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Orakel befragen</h3>
+                    <p>Klicke auf "Jetzt Figur deuten" und unser System analysiert deine Beschreibung basierend auf
+                        jahrhundertealter Symbolik.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Deutung erhalten</h3>
+                    <p>Erhalte deine persönliche Prophezeiung für das kommende Jahr – individuell und einzigartig wie
+                        deine Figur.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="seo-content">
+            <h2>Häufig gestellte Fragen zum Wachsgießen</h2>
+            <p>Hier findest du Antworten auf die wichtigsten Fragen rund um das Thema Wachsgießen, Bleigießen und
+                Orakel-Deutung.</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Was ist der Unterschied zwischen Wachsgießen und Bleigießen?</div>
+                    <div class="faq-answer">
+                        Bleigießen war der traditionelle Silvesterbrauch, bei dem Blei geschmolzen und in kaltes Wasser
+                        gegossen wurde. Seit 2018 ist der Verkauf von Bleigießen-Sets in der EU verboten, da Blei
+                        gesundheitsschädlich ist. Wachsgießen und Zinngießen sind die unbedenklichen Alternativen, die
+                        genauso faszinierende Ergebnisse liefern. Die entstehenden Formen sind oft sogar noch filigraner
+                        und interessanter.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wie genau sind die Deutungen dieses Online-Orakels?</div>
+                    <div class="faq-answer">
+                        Unser Orakel basiert auf jahrhundertealter Symbolik und moderner Analyse. Es kombiniert
+                        traditionelle Bedeutungen mit einer individuellen Interpretation deiner spezifischen
+                        Beschreibung. Wie bei allen Orakeln geht es um Inspiration und Reflexion – nicht um
+                        wissenschaftliche Vorhersagen. Die Deutungen dienen der Unterhaltung und können dir neue
+                        Perspektiven für das kommende Jahr eröffnen.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Kann ich das Orakel auch für Zinngießen verwenden?</div>
+                    <div class="faq-answer">
+                        Ja, absolut! Egal ob deine Figur aus Wachs, Zinn oder einem anderen Material entstanden ist –
+                        beschreibe einfach, was du siehst. Unser Deutungssystem funktioniert unabhängig vom verwendeten
+                        Material, da es sich auf die Form und ihre symbolische Bedeutung konzentriert.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Ist dieses Online-Orakel wirklich kostenlos?</div>
+                    <div class="faq-answer">
+                        Ja, Figur-Deuter ist zu 100% kostenlos nutzbar. Du kannst so viele Figuren deuten lassen, wie du
+                        möchtest – ohne Registrierung, ohne versteckte Kosten. Wir finanzieren uns durch dezente Werbung
+                        und Affiliate-Partnerschaften mit Shops, die Wachsgießen-Sets anbieten.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wie beschreibe ich meine Figur am besten?</div>
+                    <div class="faq-answer">
+                        Je detaillierter, desto besser! Beschreibe nicht nur, was du siehst (z.B. "eine Schlange"),
+                        sondern auch Details und Gefühle: Ist sie zusammengerollt oder gestreckt? Wirkt sie bedrohlich
+                        oder freundlich? Hat sie besondere Merkmale? Details wie "eine Schlange, die sich um einen Baum
+                        windet" liefern reichhaltigere Deutungen als nur "Schlange".
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="seo-content">
+            <h2>Über Figur-Deuter</h2>
+            <div class="about-box">
+                <h3>🔮 Dein digitaler Begleiter für Silvester-Orakel</h3>
+                <p>Figur-Deuter wurde geschaffen, um die wunderbare Tradition des Wachsgießens und Bleigießens ins
+                    digitale Zeitalter zu bringen. Wir glauben, dass jede Figur einzigartig ist – und deshalb verdient
+                    sie eine ebenso einzigartige Deutung. Statt in starren Listen zu suchen, bieten wir dir ein
+                    intelligentes System, das deine individuelle Beschreibung versteht und interpretiert. So wird die
+                    Silvester-Tradition zum persönlichen Erlebnis.</p>
             </div>
         </div>
 
@@ -562,6 +803,26 @@
                 particle.style.animation = `magicFloat ${duration} ${delay} infinite linear`;
                 container.appendChild(particle);
             }
+        });
+    </script>
+
+    <!-- FAQ Accordion Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
