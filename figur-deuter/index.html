@@ -162,6 +162,39 @@
             align-items: center;
         }
 
+        nav {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--glass-border);
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--accent-gold);
+        }
+
         /* --- NEUE MAGISCHE EFFEKTE --- */
         #magic-background {
             position: fixed;
@@ -557,6 +590,15 @@
 </head>
 
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">🔮 Orakel</a></li>
+            <li><a href="bedeutungen.html">📖 Bedeutungen</a></li>
+            <li><a href="anleitung.html">📝 Anleitung</a></li>
+            <li><a href="geschichte.html">📜 Geschichte</a></li>
+        </ul>
+    </nav>
 
     <div id="magic-background"></div>
 

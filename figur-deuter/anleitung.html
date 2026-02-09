@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wachsgießen Anleitung – Schritt für Schritt zum perfekten Orakel | Figur-Deuter</title>
+    <meta name="description"
+        content="Komplette Anleitung zum Wachsgießen zu Silvester. Lerne Schritt für Schritt, wie du Wachs gießt, Figuren erkennst und die Schatten deutest. Mit Sicherheitstipps und Profi-Tricks.">
+    <meta name="keywords"
+        content="Wachsgießen Anleitung, wie funktioniert Wachsgießen, Silvester Orakel DIY, Wachsgießen Tipps, Bleigießen Alternative">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Figur-Deuter.de">
+    <link rel="canonical" href="https://figur-deuter.de/anleitung.html">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --accent-gold: #fbbf24;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: radial-gradient(circle at 50% 0%, #312e81 0%, var(--bg-dark) 70%);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--accent-gold);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            font-size: 2.5rem;
+            margin: 0 0 20px 0;
+            text-shadow: 0 4px 20px rgba(251, 191, 36, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            font-size: 1.6rem;
+            margin: 50px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h3 {
+            color: #e2e8f0;
+            font-size: 1.2rem;
+            margin: 30px 0 15px 0;
+        }
+
+        .intro {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+        }
+
+        .step-number {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #1e1b4b;
+            flex-shrink: 0;
+        }
+
+        .content-section {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .content-section p {
+            color: var(--text-muted);
+            margin: 0 0 15px 0;
+        }
+
+        .content-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .materials-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .material-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .material-icon {
+            font-size: 1.5rem;
+        }
+
+        .material-text {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .material-text strong {
+            color: var(--text-main);
+            display: block;
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid var(--accent-gold);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .warning-box h4 {
+            color: var(--accent-gold);
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-box ul {
+            color: var(--text-muted);
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .warning-box li {
+            margin-bottom: 8px;
+        }
+
+        .tip-box {
+            background: rgba(74, 222, 128, 0.1);
+            border: 1px solid #4ade80;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .tip-box h4 {
+            color: #4ade80;
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tip-box p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .numbered-steps {
+            counter-reset: step-counter;
+        }
+
+        .numbered-step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 25px;
+        }
+
+        .numbered-step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 35px;
+            height: 35px;
+            background: var(--accent-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #1e1b4b;
+        }
+
+        .numbered-step h4 {
+            color: var(--text-main);
+            margin: 0 0 10px 0;
+        }
+
+        .numbered-step p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(217, 119, 6, 0.1) 100%);
+            border: 1px solid var(--accent-gold);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta-box h2 {
+            justify-content: center;
+            margin-top: 0;
+        }
+
+        .cta-box p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            color: #1e1b4b;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 40px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">🔮 Orakel</a></li>
+            <li><a href="bedeutungen.html">📖 Bedeutungen</a></li>
+            <li><a href="anleitung.html" class="active">📝 Anleitung</a></li>
+            <li><a href="geschichte.html">📜 Geschichte</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>📝 Wachsgießen Anleitung</h1>
+        <p class="intro">
+            Die komplette Schritt-für-Schritt-Anleitung zum Wachsgießen. Lerne, wie du zu Silvester dein eigenes Orakel
+            durchführst – sicher, einfach und mit den besten Tipps für aussagekräftige Figuren.
+        </p>
+
+        <!-- Was du brauchst -->
+        <h2><span class="step-number">1</span> Was du brauchst</h2>
+        <div class="content-section">
+            <p>Für ein gelungenes Wachsgießen-Orakel brauchst du nur wenige Materialien. Die meisten davon hast du
+                wahrscheinlich schon zu Hause:</p>
+
+            <div class="materials-list">
+                <div class="material-item">
+                    <span class="material-icon">🕯️</span>
+                    <div class="material-text">
+                        <strong>Wachsgießen-Set</strong>
+                        Fertige Sets aus dem Handel oder Kerzenreste
+                    </div>
+                </div>
+                <div class="material-item">
+                    <span class="material-icon">🥄</span>
+                    <div class="material-text">
+                        <strong>Metallöffel</strong>
+                        Zum Schmelzen des Wachses über der Flamme
+                    </div>
+                </div>
+                <div class="material-item">
+                    <span class="material-icon">💧</span>
+                    <div class="material-text">
+                        <strong>Schüssel mit Wasser</strong>
+                        Kaltes Wasser für das Erstarren
+                    </div>
+                </div>
+                <div class="material-item">
+                    <span class="material-icon">🕯️</span>
+                    <div class="material-text">
+                        <strong>Kerze oder Teelicht</strong>
+                        Als Wärmequelle zum Schmelzen
+                    </div>
+                </div>
+                <div class="material-item">
+                    <span class="material-icon">🔦</span>
+                    <div class="material-text">
+                        <strong>Taschenlampe</strong>
+                        Für die Schattenprojektion (optional)
+                    </div>
+                </div>
+                <div class="material-item">
+                    <span class="material-icon">📰</span>
+                    <div class="material-text">
+                        <strong>Unterlage</strong>
+                        Zeitung oder Wachstuch als Schutz
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 Profi-Tipp</h4>
+                <p>Verwende <strong>weißes oder ungefärbtes Wachs</strong> für bessere Ergebnisse. Farbiges Wachs kann
+                    manchmal undeutlichere Formen erzeugen.
+                    Alternativ zum gekauften Set kannst du auch alte Kerzenreste verwenden – das ist nachhaltiger und
+                    funktioniert genauso gut!</p>
+            </div>
+        </div>
+
+        <!-- Vorbereitung -->
+        <h2><span class="step-number">2</span> Die richtige Vorbereitung</h2>
+        <div class="content-section">
+            <p>Eine gute Vorbereitung ist entscheidend für ein gelungenes Orakel. Nimm dir ein paar Minuten Zeit, bevor
+                du beginnst:</p>
+
+            <h3>🏠 Den Platz vorbereiten</h3>
+            <p>Wähle einen stabilen, hitzebeständigen Untergrund. Leg eine Unterlage aus Zeitung oder einem alten Tuch
+                aus, um Wachsflecken zu vermeiden.
+                Stelle die Wasserschüssel bereit – sie sollte groß genug sein, damit das Wachs vollständig eintauchen
+                kann, aber nicht so voll, dass Wasser überschwappt.</p>
+
+            <h3>✨ Die richtige Atmosphäre</h3>
+            <p>Dimme das Licht, zünde Kerzen an und schaffe eine mystische Stimmung. Das Orakel lebt von seiner
+                Atmosphäre! Viele Menschen stellen sich
+                vor dem Gießen eine Frage oder denken an ein bestimmtes Thema – manche glauben, dass dies die Form des
+                Wachses beeinflusst.</p>
+
+            <div class="warning-box">
+                <h4>⚠️ Sicherheitshinweise</h4>
+                <ul>
+                    <li>Halte immer einen Topflappen oder Ofenhandschuh bereit – der Löffel wird heiß!</li>
+                    <li>Kinder sollten nur unter Aufsicht Erwachsener teilnehmen</li>
+                    <li>Halte brennbare Materialien vom Arbeitsbereich fern</li>
+                    <li>Gieße das Wachs nie direkt über der Kerze ins Wasser – Spritzgefahr!</li>
+                    <li>Lösche alle Flammen, bevor du den Raum verlässt</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Das Wachs schmelzen -->
+        <h2><span class="step-number">3</span> Das Wachs schmelzen</h2>
+        <div class="content-section">
+            <p>Jetzt wird es spannend! Das richtige Schmelzen des Wachses ist der Schlüssel zu interessanten Figuren:
+            </p>
+
+            <div class="numbered-steps">
+                <div class="numbered-step">
+                    <h4>Wachs in den Löffel geben</h4>
+                    <p>Leg ein Wachsstück in den Metallöffel. Für den Anfang reicht ein kleines Stück – etwa so groß wie
+                        ein Zwei-Euro-Stück.
+                        Zu viel Wachs führt zu unförmigen Klumpen, zu wenig zu undeutlichen Figuren.</p>
+                </div>
+                <div class="numbered-step">
+                    <h4>Über die Flamme halten</h4>
+                    <p>Halte den Löffel etwa 2-3 cm über die Kerzenflamme. Nicht zu nah, sonst verkohlt das Wachs!
+                        Bewege den Löffel leicht, damit das Wachs gleichmäßig schmilzt.</p>
+                </div>
+                <div class="numbered-step">
+                    <h4>Auf die richtige Konsistenz warten</h4>
+                    <p>Das Wachs sollte vollständig flüssig sein, aber nicht kochen. Kleine Bläschen sind in Ordnung,
+                        aber wenn es raucht, ist es zu heiß. In diesem Fall kurz von der Flamme nehmen.</p>
+                </div>
+                <div class="numbered-step">
+                    <h4>Zügig ins Wasser gießen</h4>
+                    <p>Gieße das flüssige Wachs mit einer schnellen, entschlossenen Bewegung ins kalte Wasser.
+                        Zögere nicht! Eine fließende Bewegung erzeugt interessantere Formen als zaghaftes Tröpfeln.</p>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 Für besondere Formen</h4>
+                <p>Die <strong>Gießhöhe</strong> beeinflusst das Ergebnis: Aus größerer Höhe (20-30 cm) entstehen
+                    zerfranste,
+                    komplexe Formen. Aus geringer Höhe (5-10 cm) werden die Figuren kompakter und massiver.
+                    Experimentiere!</p>
+            </div>
+        </div>
+
+        <!-- Die Figur betrachten -->
+        <h2><span class="step-number">4</span> Die Figur betrachten</h2>
+        <div class="content-section">
+            <p>Nachdem das Wachs im Wasser erstarrt ist (das dauert nur wenige Sekunden), kommt der spannendste Teil:
+                die Deutung!</p>
+
+            <h3>👀 Erste Betrachtung</h3>
+            <p>Nimm die Figur vorsichtig aus dem Wasser und betrachte sie von allen Seiten. Drehe sie, wende sie, halte
+                sie ins Licht.
+                Oft sieht man je nach Blickwinkel völlig unterschiedliche Dinge. Was siehst du als Erstes?
+                Der erste Eindruck ist oft der wichtigste!</p>
+
+            <h3>🔦 Die Schattenmethode</h3>
+            <p>Die traditionelle Methode zur Deutung ist die <strong>Schattenprojektion</strong>. Halte die Figur vor
+                eine Lichtquelle
+                (Taschenlampe, Kerze oder Lampe) und projiziere den Schatten an eine weiße Wand. Der Schatten offenbart
+                oft Details,
+                die an der Figur selbst schwer zu erkennen sind.</p>
+
+            <h3>🤔 Was du suchen solltest</h3>
+            <p>Lass deine Fantasie spielen! Suche nach:</p>
+            <ul style="color: var(--text-muted);">
+                <li><strong>Tieren:</strong> Vögel, Fische, Schlangen, Pferde...</li>
+                <li><strong>Gegenständen:</strong> Herzen, Schlüssel, Schiffe, Häuser...</li>
+                <li><strong>Symbolen:</strong> Sterne, Monde, Kreuze, Ringe...</li>
+                <li><strong>Abstrakten Formen:</strong> Auch diese haben Bedeutung!</li>
+            </ul>
+            <p>Es gibt kein Richtig oder Falsch. Jeder sieht etwas anderes – und genau das macht das Orakel so
+                persönlich.</p>
+        </div>
+
+        <!-- Die Deutung -->
+        <h2><span class="step-number">5</span> Die Deutung</h2>
+        <div class="content-section">
+            <p>Du hast eine Form erkannt? Wunderbar! Jetzt geht es darum, ihre Bedeutung für dein Leben zu
+                entschlüsseln.</p>
+
+            <h3>📚 Klassische Bedeutungen</h3>
+            <p>Viele Symbole haben traditionelle Bedeutungen, die über Jahrhunderte überliefert wurden.
+                In unserem <a href="bedeutungen.html" style="color: var(--accent-gold);">Symbollexikon</a> findest du
+                über 20 detaillierte Interpretationen
+                der häufigsten Figuren.</p>
+
+            <h3>💭 Persönliche Interpretation</h3>
+            <p>Noch wichtiger als die allgemeine Bedeutung ist, was das Symbol <strong>für dich persönlich</strong>
+                bedeutet.
+                Was verbindest du damit? Welche Gefühle löst es aus? Eine Schlange kann für den einen Heilung bedeuten,
+                für den anderen (der vielleicht Angst vor Schlangen hat) eine Warnung.</p>
+
+            <h3>🤖 Das moderne Orakel</h3>
+            <p>Für eine individuelle, auf deine Beschreibung zugeschnittene Deutung nutze unser
+                <strong>Online-Orakel</strong>.
+                Es analysiert nicht nur das Symbol, sondern auch die Details deiner Beschreibung und liefert eine
+                einzigartige Interpretation.</p>
+        </div>
+
+        <!-- Häufige Fehler vermeiden -->
+        <h2><span class="step-number">6</span> Häufige Fehler vermeiden</h2>
+        <div class="content-section">
+            <p>Auch beim Wachsgießen kann man Fehler machen. Hier die häufigsten – und wie du sie vermeidest:</p>
+
+            <h3>❌ Zu heißes Wachs</h3>
+            <p>Wenn das Wachs raucht oder zu schnell siedet, ist es zu heiß. Das führt zu unförmigen Klumpen und kann
+                gefährlich sein.
+                Lösung: Weniger nah an die Flamme halten und Geduld haben.</p>
+
+            <h3>❌ Zu viel Wachs auf einmal</h3>
+            <p>Große Wachsmengen ergeben schwere Klumpen, bei denen man nichts erkennt.
+                Besser: Klein anfangen und bei Bedarf einen zweiten Versuch machen.</p>
+
+            <h3>❌ Zögerliches Gießen</h3>
+            <p>Wer zu langsam gießt, bekommt nur Tropfen statt einer zusammenhängenden Figur.
+                Mut zum entschlossenen Guss!</p>
+
+            <h3>❌ Warmes Wasser</h3>
+            <p>Das Wasser muss kalt sein! In warmem Wasser erstarrt das Wachs zu langsam und bildet keine interessanten
+                Strukturen.
+                Im Winter: Eiswürfel ins Wasser geben für extra-knackige Formen.</p>
+        </div>
+
+        <!-- Varianten -->
+        <h2><span class="step-number">7</span> Varianten & Alternativen</h2>
+        <div class="content-section">
+            <h3>🥄 Zinngießen</h3>
+            <p>Zinngießen funktioniert nach demselben Prinzip wie Wachsgießen, erzeugt aber noch detailliertere Figuren.
+                Zinn hat einen höheren Schmelzpunkt und ist etwas anspruchsvoller in der Handhabung, aber die Ergebnisse
+                sind oft beeindruckend.</p>
+
+            <h3>☕ Kaffeesatz-Orakel</h3>
+            <p>Eine Alternative ohne Hitze: Nach dem Trinken eines türkischen oder griechischen Kaffees wird die Tasse
+                umgestülpt.
+                Die Muster im Kaffeesatz werden dann gedeutet – eine jahrhundertealte Tradition im Mittelmeerraum.</p>
+
+            <h3>📷 Foto-Methode</h3>
+            <p>Modern und praktisch: Fotografiere deine Wachsfigur aus verschiedenen Winkeln und mit unterschiedlicher
+                Beleuchtung.
+                Oft erkennt man auf den Fotos mehr als mit bloßem Auge – und du hast gleich eine Erinnerung!</p>
+        </div>
+
+        <div class="cta-box">
+            <h2>🔮 Figur gegossen? Jetzt deuten lassen!</h2>
+            <p>Du hast dein Wachsgießen-Orakel durchgeführt? Beschreibe deine Figur und erhalte eine individuelle,
+                detaillierte Deutung für das kommende Jahr. Unser intelligentes System analysiert auch abstrakte Formen!
+            </p>
+            <a href="index.html" class="cta-button">Zum Online-Orakel →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Figur-Deuter.de – Dein persönliches Silvester-Orakel</p>
+        <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+</body>
+
+</html>
