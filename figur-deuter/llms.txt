@@ -1,0 +1,33 @@
+# Figur-Deuter.de
+
+> Das kostenlose Online-Orakel zur Deutung von Wachsgießen und Bleigießen Figuren.
+
+## Beschreibung
+
+Figur-Deuter.de ist ein deutschsprachiges Online-Orakel für die Silvester-Tradition des Wachsgießens (früher Bleigießens). Nutzer beschreiben ihre gegossene Wachsfigur und erhalten eine individuelle, KI-gestützte Deutung für das kommende Jahr.
+
+## Hauptfunktionen
+
+- **Online-Orakel**: Beschreibe deine Wachsfigur und erhalte eine persönliche Prophezeiung
+- **Symbollexikon**: 24+ detaillierte Bedeutungen der häufigsten Figuren (Herz, Schlange, Baum, Stern, etc.)
+- **Anleitung**: Schritt-für-Schritt-Guide zum Wachsgießen mit Materialien und Sicherheitstipps
+- **Geschichte**: Von der antiken Molybdomantie bis zum EU-Verbot 2018
+
+## Seiten
+
+- Hauptseite (Orakel): https://figur-deuter.de/
+- Bedeutungen-Lexikon: https://figur-deuter.de/bedeutungen.html
+- Anleitung: https://figur-deuter.de/anleitung.html
+- Geschichte: https://figur-deuter.de/geschichte.html
+
+## Kontext
+
+Wachsgießen ist die moderne, sichere Alternative zum traditionellen Bleigießen, das 2018 in der EU verboten wurde. Zu Silvester wird geschmolzenes Wachs in kaltes Wasser gegossen. Die entstehenden Formen werden gedeutet, um einen Blick ins neue Jahr zu werfen.
+
+## Sprache
+
+Deutsch (de-DE)
+
+## Kontakt
+
+Website: https://figur-deuter.de
