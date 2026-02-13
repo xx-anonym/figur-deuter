@@ -17,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://figur-deuter.de/sitemap.xml
+Sitemap: https://www.figur-deuter.de/sitemap.xml

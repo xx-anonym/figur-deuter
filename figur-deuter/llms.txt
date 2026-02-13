@@ -15,10 +15,10 @@ Figur-Deuter.de ist ein deutschsprachiges Online-Orakel für die Silvester-Tradi
 
 ## Seiten
 
-- Hauptseite (Orakel): https://figur-deuter.de/
-- Bedeutungen-Lexikon: https://figur-deuter.de/bedeutungen.html
-- Anleitung: https://figur-deuter.de/anleitung.html
-- Geschichte: https://figur-deuter.de/geschichte.html
+- Hauptseite (Orakel): https://www.figur-deuter.de/
+- Bedeutungen-Lexikon: https://www.figur-deuter.de/bedeutungen.html
+- Anleitung: https://www.figur-deuter.de/anleitung.html
+- Geschichte: https://www.figur-deuter.de/geschichte.html
 
 ## Kontext
 
@@ -30,4 +30,4 @@ Deutsch (de-DE)
 
 ## Kontakt
 
-Website: https://figur-deuter.de
+Website: https://www.figur-deuter.de
